@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signature Collection | The Baking Studio</title>
+    <meta name="description" content="Signature handcrafted eggless designer cakes by The Baking Studio." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+  </head>
+  <body data-asset-depth="../../" data-category="signature">
+    <header class="site-header scrolled" data-header>
+      <a class="brand" href="../../index.html#home" aria-label="The Baking Studio home"><img class="brand-logo" src="../../assets/products/logo.jpg" alt="The Baking Studio logo" /><span>The Baking Studio</span></a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle><span></span><span></span></button>
+      <nav class="site-nav" data-nav><a href="../../index.html#home">Home</a><a href="../">Collections</a><a href="./">Signature Collection</a><a href="../birthday/">Birthday Collection</a><a href="../wedding-anniversary/">Wedding & Anniversary</a></nav>
+      <a class="header-order" href="#" data-whatsapp-link>Order on WhatsApp</a>
+    </header>
+    <main>
+      <section class="section page-hero">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html#home">Home</a><span>/</span><a href="../">Collections</a><span>/</span><span>Signature Collection</span></nav>
+        <p class="eyebrow">Designer Cakes | Luxury Cakes | Floral Cakes</p>
+        <h1>Signature Collection</h1>
+        <p class="intro-text">Our signature handcrafted creations featuring artistic designs, elegant finishes and premium craftsmanship for extraordinary celebrations.</p>
+      </section>
+      <section class="section collection">
+        <div class="order-notice reveal"><h3>Every cake is handcrafted fresh after your order is confirmed.</h3><p>Kindly place your order at least 24 hours before your preferred pickup or delivery time to ensure the highest quality and timely preparation.</p></div>
+        <div class="category-tools reveal"><input type="search" placeholder="Search cakes" data-product-search /><select data-product-sort><option value="featured">Sort by Featured</option><option value="name">Sort by Name</option><option value="price-low">Price Low to High</option></select></div>
+        <div class="product-grid" data-category-products></div>
+        <div class="load-more-wrap"><button class="btn btn-secondary" type="button" data-load-more>Load More</button></div>
+      </section>
+    </main>
+    <button class="floating-cart" type="button" hidden data-cart-button>Your Order (0)</button>
+    <aside class="cart-drawer" aria-hidden="true" data-cart-drawer><div class="drawer-panel"><div class="drawer-header"><div><p class="eyebrow">Your Order</p><h2>Ready for WhatsApp</h2></div><button class="icon-button" type="button" aria-label="Close order drawer" data-close-cart>&times;</button></div><div class="cart-items" data-cart-items></div><div class="drawer-footer"><p data-cart-empty>Your selected cakes will appear here.</p><a class="btn btn-primary btn-full" href="#" data-send-order>Send Order on WhatsApp</a></div></div></aside>
+    <div class="modal" aria-hidden="true" data-modal><div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" type="button" aria-label="Close product details" data-close-modal>&times;</button><div class="modal-image product-image" data-modal-image></div><div class="modal-content"><p class="eyebrow">Cake Details</p><h2 id="modal-title" data-modal-title></h2><p data-modal-description></p><p class="price" data-modal-price></p><dl class="detail-list"><div><dt>Available Sizes</dt><dd data-modal-weights></dd></div><div><dt>Features</dt><dd data-modal-features></dd></div><div><dt>Preparation Time</dt><dd data-modal-time></dd></div><div><dt>Servings</dt><dd data-modal-servings></dd></div><div><dt>Occasion</dt><dd data-modal-occasion></dd></div><div><dt>Best For</dt><dd data-modal-best-for></dd></div></dl><p class="fixed-weight" hidden data-fixed-weight></p><label class="field" data-weight-field><span>Weight</span><select data-modal-weight></select></label><div class="quantity-control" aria-label="Quantity selector"><button type="button" data-qty-minus>-</button><span data-modal-quantity>1</span><button type="button" data-qty-plus>+</button></div><button class="btn btn-primary btn-full" type="button" data-add-order>Add to Order</button><a class="btn btn-secondary btn-full modal-customize" href="#" data-customize-cake>Customize Your Cake</a></div></div></div>
+    <footer class="site-footer"><div class="brand"><img class="brand-logo" src="../../assets/products/logo.jpg" alt="The Baking Studio logo" /><span>The Baking Studio</span></div><nav><a href="../../index.html#home">Home</a><a href="../">Collections</a><a href="../../index.html#about">Our Story</a><a href="#" data-whatsapp-link>WhatsApp</a></nav><p>&copy; <span data-year></span> The Baking Studio. Designed & Developed by Aditya Sony 7018651029.</p></footer>
+    <script src="../../js/config.js"></script><script src="../../js/products.js"></script><script src="../../js/app.js"></script>
+  </body>
+</html>
