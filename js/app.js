@@ -117,7 +117,7 @@
   function renderBestSellers() {
     var target = document.querySelector("[data-best-sellers]");
     if (!target) return;
-    products.filter(function (product) { return product.featured; }).slice(0, 3).forEach(function (product) {
+    products.filter(function (product) { return product.bestSeller; }).slice(0, 3).forEach(function (product) {
       target.appendChild(productCard(product));
     });
   }
@@ -127,7 +127,12 @@
     if (!target) return;
     Object.keys(collections).forEach(function (key) {
       var data = collections[key];
-      var cover = products.find(function (product) { return product.category === key; }) || products[0];
+      var cover = products.find(function (product) {
+        if (Array.isArray(product.category)) {
+          return product.category.indexOf(key) !== -1;
+        }
+        return product.category === key;
+      }) || products[0];
       var card = document.createElement("article");
       card.className = "collection-card reveal";
       card.appendChild(createProductImage(cover));
@@ -149,7 +154,11 @@
 
   function currentCategoryProducts() {
     return products.filter(function (product) {
-      return !category || product.category === category;
+      if (!category) return true;
+      if (Array.isArray(product.category)) {
+        return product.category.indexOf(category) !== -1;
+      }
+      return product.category === category;
     });
   }
 
@@ -223,7 +232,7 @@
     if (activeProduct.weights.length === 1) {
       field.hidden = true;
       fixed.hidden = false;
-      fixed.textContent = "Available Size: " + activeProduct.weights[0];
+      fixed.innerHTML = "Available Size<br>" + activeProduct.weights[0];
     } else {
       field.hidden = false;
       fixed.hidden = true;

@@ -1,7 +1,7 @@
 window.BAKERY_PRODUCTS = [
   {
     id: "customizable-cake",
-    name: "Customizable Cake",
+    name: "Unicorn Cake",
     image: "assets/products/blacked out bgm/1. customizable 900 rs .png",
     description: "Handcrafted eggless cake finished with premium cream and carefully designed for memorable celebrations. Freshly baked using quality ingredients and decorated by hand for every order.",
     price: "Starting at Rs. 900",
@@ -55,7 +55,7 @@ window.BAKERY_PRODUCTS = [
     description: "A handcrafted eggless blueberry-inspired cake with a graceful butterfly theme. Freshly baked and decorated by hand for birthdays, surprises, and elegant celebrations.",
     price: "Price on request",
     weights: ["Size confirmed on WhatsApp"],
-    category: "signature",
+    category: "birthday",
     occasion: "Elegant celebrations",
     bestFor: "Creative themes, floral details, and boutique styling",
     themeLine: "Butterfly-themed blueberry cake designed for soft, elegant celebrations.",
@@ -71,7 +71,7 @@ window.BAKERY_PRODUCTS = [
     description: "An elegant eggless cake with red rose accents and butterfly-inspired detailing. Made fresh for every order and finished with a polished celebration look.",
     price: "Starting at Rs. 750",
     weights: ["1kg"],
-    category: "signature",
+    category: "birthday",
     occasion: "Romantic celebrations",
     bestFor: "Anniversaries, surprises, and rose-themed occasions",
     themeLine: "Red rose butterfly cake for romantic celebrations and special surprises.",
@@ -87,7 +87,7 @@ window.BAKERY_PRODUCTS = [
     description: "A freshly baked eggless butterscotch cake with a smooth premium cream finish. Handcrafted for birthdays, anniversaries, and simple family celebrations.",
     price: "Starting at Rs. 750",
     weights: ["1kg"],
-    category: "signature",
+    category: ["signature", "birthday"],
     occasion: "Everyday celebrations",
     bestFor: "Birthdays, family moments, and simple celebrations",
     themeLine: "Classic butterscotch cake with a clean handcrafted finish.",
@@ -103,7 +103,7 @@ window.BAKERY_PRODUCTS = [
     description: "A premium eggless cake balancing butterscotch, coffee, and mocha-inspired notes. Freshly baked and decorated by hand for celebrations with a richer flavour profile.",
     price: "Starting at Rs. 750",
     weights: ["1kg"],
-    category: "birthday",
+    category: ["signature", "birthday"],
     occasion: "Premium celebrations",
     bestFor: "Coffee lovers and refined flavour preferences",
     themeLine: "Coffee mocha butterscotch cake for a refined celebration flavour.",
@@ -183,14 +183,15 @@ window.BAKERY_PRODUCTS = [
     description: "A special eggless blueberry cake designed for larger celebrations and family gatherings. Freshly baked after confirmation and finished with a premium handcrafted look.",
     price: "Starting at Rs. 2500",
     weights: ["3kg"],
-    category: "signature",
+    category: "wedding-anniversary",
     occasion: "Large celebrations",
     bestFor: "Blueberry lovers and custom celebration themes",
     themeLine: "Large blueberry celebration cake for gatherings and custom themes.",
     preparation: "24 to 36 hours",
     servings: "12 to 24 servings",
     customisation: "Customize theme, message, colours, and decorative finish according to your preference.",
-    featured: false
+    featured: false,
+    bestSeller: true
   },
   {
     id: "doreamon-butterscotch-cake",
@@ -254,7 +255,8 @@ window.BAKERY_PRODUCTS = [
     preparation: "24 hours",
     servings: "4 to 10 servings",
     customisation: "Customize message, festive styling, and finishing details.",
-    featured: false
+    featured: false,
+    bestSeller: true
   },
   {
     id: "strawberry-cake",
@@ -295,7 +297,7 @@ window.BAKERY_PRODUCTS = [
     description: "A rich eggless truffle cake with a smooth chocolate-inspired finish. Freshly baked and hand decorated for birthdays, anniversaries, and indulgent celebrations.",
     price: "Starting at Rs. 850",
     weights: ["1kg"],
-    category: "wedding-anniversary",
+    category: "signature",
     occasion: "Chocolate celebrations",
     bestFor: "Chocolate lovers, birthdays, and indulgent occasions",
     themeLine: "A handcrafted favourite loved by chocolate enthusiasts.",
@@ -303,7 +305,8 @@ window.BAKERY_PRODUCTS = [
     preparation: "24 hours",
     servings: "4 to 10 servings",
     customisation: "Customize message, chocolate finish, theme, and occasion details.",
-    featured: false
+    featured: false,
+    bestSeller: true
   },
   {
     id: "vanilla-cake-750",
@@ -323,12 +326,12 @@ window.BAKERY_PRODUCTS = [
   },
   {
     id: "vanilla-cake-850",
-    name: "Vanilla Cake Premium",
+    name: "Premium Vanilla Cake",
     image: "assets/products/blacked out bgm/vanilla 1kg 850rs.png",
     description: "A premium eggless vanilla cake prepared fresh for confirmed orders. Hand finished with elegant cream work for a polished celebration presentation.",
     price: "Starting at Rs. 850",
     weights: ["1kg"],
-    category: "signature",
+    category: "wedding-anniversary",
     occasion: "Classic celebrations",
     bestFor: "Premium vanilla cakes with handcrafted styling",
     themeLine: "Premium vanilla cake with handcrafted celebration styling.",
